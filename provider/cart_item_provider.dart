@@ -15,7 +15,7 @@ class CartItemProvider with ChangeNotifier {
             previousValue,
             cartItemModel,
           ) =>
-              previousValue += cartItemModel.price,
+              previousValue += cartItemModel.price * cartItemModel.quantity,
         );
   }
 
